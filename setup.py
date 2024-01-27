@@ -451,7 +451,7 @@ elif machine in ("x86_64", "amd64", "x86", "i386", "i686"):
         "resampler/sinc_resampler_sse.cc",
         "third_party/ooura/fft_size_128/ooura_fft_sse2.cc",
     ]
-elif machine in ("armv7", "armv7l"):
+elif machine in ("armv7", "armv7l", "armv8l"):
     # 32-bit ARM
     machine_cflags += [
         "-DWEBRTC_ARCH_ARM_V7",
